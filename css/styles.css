@@ -1,0 +1,306 @@
+:root {
+  --color-primary: #0859c6;
+  --color-secondary: #444bd3;
+  --color-body: #727272;
+  --color-heading: #2a3342;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: var(--color-body);
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  outline: 1;
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.btn__small {
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1;
+  padding: 1.6rem 2.8rem;
+}
+
+.btn__strectched {
+  font-size: 2.3rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 25px;
+  padding: 2rem 4rem;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn:hover {
+  background: #4b91ee;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.icon__small {
+  width: 20px;
+  height: 20px;
+}
+
+.icon__arrow {
+  width: 20px;
+  height: 12px;
+}
+
+.icon--container {
+  align-items: center;
+  border-radius: 6px;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
+.icon--container-primary {
+  background: var(--color-primary);
+}
+.icon--container-blue {
+  background: #444bd3;
+}
+
+.icon--container-white {
+  background: #c4c3c3;
+}
+
+.icon--container_cirle {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.icon--container_arrow {
+  width: 72px;
+  height: 48px;
+  border-radius: 100px;
+}
+
+.card {
+  max-width: 358px;
+  max-height: 211px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 5.6rem 2.4rem;
+  margin-bottom: 1rem;
+  grid-column: span 2;
+}
+
+.card__heading {
+  font-size: 3rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.card__body {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-gap: 2.4rem;
+}
+
+.card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+/* testing  */
+.review__box-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.review--box {
+  width: 420px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  background: #fff;
+  padding: 2rem 4rem;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.profile--img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.profile--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.review--profile {
+  display: flex;
+  align-items: center;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-user strong {
+  color: #3d3d3d;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.name-user span {
+  color: #979797;
+  font-size: 1.2rem;
+}
+
+.review {
+  color: #f9d71c;
+  margin-left: 25px;
+}
+
+.review i {
+  margin-left: -5px;
+}
+
+.box--bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-comment p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  opacity: 56%;
+  color: #4b4b4b;
+  margin-bottom: 30px;
+}
+
+.review--box:hover {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+.callout {
+  background: url(../img/callout.png);
+  height: 289px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-left: 7rem;
+}
+
+.callout h2 {
+  color: white;
+  font-size: 3.6rem;
+  font-weight: 700;
+  width: 50%;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+
+.callout p {
+  width: 40%;
+  color: white;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.callout button {
+  margin-right: 2rem;
+}
+
+.mid-container {
+  position: relative;
+  height: 418px;
+}
+
+.first-half {
+  background: white;
+  height: 200px;
+}
+
+.second-half {
+  background: rgba(247, 248, 249, 1);
+  height: 216px;
+}
+
+.floating__img {
+  position: absolute;
+  top: -10px;
+  left: 1008px;
+}
